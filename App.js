@@ -9,7 +9,7 @@ export default function App() {
 
   const calculation = (text) => {
     if (text === '') {
-      // Handle the case where the input is empty, e.g., set both lower and upper to empty strings or any default values you prefer.
+      // Handle the case where the input is empty, e.g., set both lower and upper to zero.
       setLower(0);
       setUpper(0);
       return;
@@ -23,7 +23,7 @@ export default function App() {
       setLower(lowerResult.toFixed(0));
       setUpper(upperResult.toFixed(0));
     } else {
-      // Handle invalid input here
+      // If the input is something other than numbers
       setLower('Please, give your age in numbers');
       setUpper('')
     }
